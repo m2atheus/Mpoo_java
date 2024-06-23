@@ -63,7 +63,7 @@ public class CadastrarUsuarioController {
 	        	!cadastrarView.getCadastrarPanelView().getNomeField().getText().equalsIgnoreCase("Nome Completo") &&
 	        	!cadastrarView.getCadastrarPanelView().getCpfField().getText().equalsIgnoreCase("   .   .   -  ") &&
 	        	!cadastrarView.getCadastrarPanelView().getFoneField().getText().equalsIgnoreCase("(  )     -    ") &&
-	        	cadastrarView.getCadastrarPanelView().getEmailField().getText().length() > 0
+	        	cadastrarView.getCadastrarPanelView().getEmailField().getText().length()>0
 					) {
 				cadastrarView.getCadastrarPanelView().getAdicionarButton().setEnabled(true);
 			}else {
