@@ -1,0 +1,35 @@
+package view;
+
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class LoginView extends JFrame{
+	
+	JLabel loginLabel,senhaLabel;
+	JTextField loginField;
+	JPasswordField senhaField;
+	
+	public LoginView() {
+		super("login");
+		setSize(250, 200);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		loginLabel = new JLabel("Login:",JLabel.RIGHT);
+		senhaLabel = new JLabel("Senha:",JLabel.RIGHT);
+		
+		
+		
+		
+		
+		
+		setVisible(true);
+	}
+
+	
+	
+	
+}

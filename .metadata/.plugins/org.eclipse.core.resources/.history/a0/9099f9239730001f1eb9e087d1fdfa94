@@ -1,0 +1,39 @@
+package controller;
+
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowListener;
+
+import view.AberturaView;
+import view.LoginView;
+
+public class AberturaController {
+	
+	AberturaView aberturaView;
+	LoginView loginView;
+	KeyHandler keyHandler;
+	
+	public AberturaController(AberturaView aberturaView, LoginView loginView) {
+		this.aberturaView = aberturaView;
+		this.loginView = loginView;
+		keyHandler = new KeyHandler();
+	}
+
+	
+	private class WindowHandler implements WindowListener{
+		
+	}
+	
+	
+	private class KeyHandler extends KeyAdapter{
+
+		@Override
+		public void keyPressed(KeyEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		
+	}
+
+}

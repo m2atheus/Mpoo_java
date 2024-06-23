@@ -1,0 +1,59 @@
+package view;
+
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.SpringLayout;
+
+import util.SpringUtilities;
+
+public class LoginView extends JFrame{
+	
+	JLabel loginLabel,senhaLabel;
+	JTextField loginField;
+	JPasswordField senhaField;
+	JButton entraButton,sairButton;
+	JPanel loginPanel;
+	
+	public LoginView() {
+		super("login");
+		setSize(250, 130);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		loginLabel = new JLabel("Login:",JLabel.RIGHT);
+		senhaLabel = new JLabel("Senha:",JLabel.RIGHT);
+		
+		loginField = new JTextField(10);
+		senhaField = new JPasswordField(10);
+		
+		entraButton = new JButton("Entrar");
+		sairButton = new JButton("Sair");
+		
+		loginPanel = new JPanel();
+		loginPanel.setLayout(new SpringLayout());
+		loginPanel.add(loginLabel);
+		loginPanel.add(loginField);
+		loginPanel.add(senhaLabel);
+		loginPanel.add(senhaField);
+		loginPanel.add(entraButton);
+		loginPanel.add(sairButton);
+		
+		SpringUtilities.makeCompactGrid(loginPanel,
+										3, 2,
+										6, 6, 
+										6, 6);
+		
+		
+		
+		add(loginPanel);
+		setVisible(true);
+	}
+
+	
+	
+	
+}

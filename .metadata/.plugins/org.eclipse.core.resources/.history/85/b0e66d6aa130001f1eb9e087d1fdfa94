@@ -1,0 +1,15 @@
+package view;
+
+import javax.swing.JOptionPane;
+
+public class MensagemView extends JOptionPane{
+	
+	
+	
+	public static void mostrarMensagem() {
+	
+		
+		
+	}
+
+}

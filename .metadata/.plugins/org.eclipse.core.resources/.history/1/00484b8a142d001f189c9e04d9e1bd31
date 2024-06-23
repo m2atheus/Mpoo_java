@@ -1,0 +1,17 @@
+package view;
+
+
+
+import javax.swing.JFrame;
+
+public class AberturaView extends JFrame{
+
+	public AberturaView(){
+		super();
+	}
+	
+	
+	
+	
+
+}

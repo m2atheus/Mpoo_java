@@ -1,0 +1,20 @@
+package app;
+
+import view.AberturaView;
+import view.CadastroPanelView;
+import view.LoginView;
+import view.CadastrarView;
+
+public class App {
+
+	public static void main(String[] args) {
+//		AberturaView aberturaView = new AberturaView();
+		
+//		CadastrarView cadatroView = new CadastrarView();
+		AberturaView aberturaView = new AberturaView();
+		LoginView loginView = new LoginView();
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package app;
+
+import view.AberturaView;
+
+public class App {
+
+	public static void main(String[] args) {
+		AberturaView aberturaView = new AberturaView();
+
+	}
+
+}

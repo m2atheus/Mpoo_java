@@ -1,0 +1,40 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import view.AberturaView;
+import view.CadastrarView;
+
+public class LoginController {
+
+	AberturaView aberturaView;
+	CadastrarView cadastrarView;
+	ButtonHandler buttonHandler;
+	
+	public LoginController(AberturaView aberturaView,CadastrarView cadastrarView) {
+		
+		this.aberturaView = aberturaView;
+		this.cadastrarView = cadastrarView;
+		buttonHandler = new ButtonHandler();
+		
+		
+		control();
+	}
+	
+	private void control() {
+		
+	}
+	
+	
+	private class ButtonHandler implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+
+}

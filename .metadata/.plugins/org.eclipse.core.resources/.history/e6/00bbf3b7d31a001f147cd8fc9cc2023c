@@ -1,0 +1,27 @@
+package gui;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class TelaLogin {
+	
+	JFrame jframe;
+	JButton jbutton;
+
+	public TelaLogin() {
+		
+		jframe = new JFrame("teste");
+		
+		jframe.setSize(300, 200);
+		jframe.setLocationRelativeTo(null);
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		jbutton = new JButton("entar");
+		jframe.add(jbutton);
+		
+		jframe.setVisible(true);
+	}
+	
+	
+
+}

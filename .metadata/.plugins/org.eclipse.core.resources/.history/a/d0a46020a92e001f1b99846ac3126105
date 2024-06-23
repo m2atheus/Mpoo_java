@@ -1,0 +1,14 @@
+package app;
+
+import view.AberturaView;
+import view.TelaView;
+
+public class App {
+
+	public static void main(String[] args) {
+//		AberturaView aberturaView = new AberturaView();
+		TelaView cadatroView = new TelaView();
+
+	}
+
+}

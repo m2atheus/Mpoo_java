@@ -1,0 +1,30 @@
+package gui;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class TelaLogin extends JFrame {
+	
+	JButton jbutton;
+
+	public TelaLogin() {
+		super("teste");
+		
+		setLayout(new FlowLayout());
+		setResizable(false);
+		
+		setSize(300, 200);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		jbutton = new JButton("entar");
+		add(jbutton);
+		
+		setVisible(true);
+	}
+	
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;model&apos; to &apos;MPOO_lista8_/src&apos;&#x0D;&#x0A;- Original project: &apos;MPOO_lista7_questao3_&apos;&#x0D;&#x0A;- Destination element: &apos;MPOO_lista8_/src&apos;&#x0D;&#x0A;- Original element: &apos;MPOO_lista7_questao3_/src/model&apos;" description="Copy package" destination="=MPOO_lista8_/src" element1="/src&lt;model" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1717886310245" version="1.0"/>
+</session>

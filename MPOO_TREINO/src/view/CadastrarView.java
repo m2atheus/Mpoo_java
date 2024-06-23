@@ -1,0 +1,91 @@
+package view;
+
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.KeyStroke;
+
+public class CadastrarView extends JFrame{
+	
+	JMenuBar menuBar;
+	JMenu cadastrarMenu,sairMenu;
+	JMenuItem UsuarioItem,logooffItem,exitItem;
+	ImageIcon iconeIcon;
+	
+	CadastroPanelView cadastrarPanelView;
+	
+	public CadastrarView(){
+		super("MPOO treino");
+		
+		setSize(360, 320);
+		setLocationRelativeTo(null);
+		setLayout(new FlowLayout());
+		
+		
+		iconeIcon = new ImageIcon("image/icone.png");
+		setIconImage(iconeIcon.getImage());
+		
+		menuBar = new JMenuBar();
+		cadastrarMenu = new JMenu("Cadastrar");
+		sairMenu = new JMenu("sair");
+		sairMenu.setMnemonic(KeyEvent.VK_S);
+		
+		menuBar.add(cadastrarMenu);
+		menuBar.add(sairMenu);
+		
+		UsuarioItem = new JMenuItem("Usuario");
+		logooffItem = new JMenuItem("Logo Off");
+		logooffItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, ActionEvent.ALT_MASK));
+		exitItem = new JMenuItem("Exit");
+		
+		cadastrarMenu.add(UsuarioItem);
+		sairMenu.add(logooffItem);
+		sairMenu.addSeparator();
+		sairMenu.add(exitItem);
+		
+		
+		
+		cadastrarPanelView = new CadastroPanelView();
+		
+		
+		setJMenuBar(menuBar);
+		add(cadastrarPanelView);
+		cadastrarPanelView.setVisible(false);
+		setVisible(false);
+	}
+
+	public JMenu getCadastrarMenu() {
+		return cadastrarMenu;
+	}
+
+	public JMenu getSairMenu() {
+		return sairMenu;
+	}
+
+	public JMenuItem getUsuarioItem() {
+		return UsuarioItem;
+	}
+
+	public JMenuItem getLogooffItem() {
+		return logooffItem;
+	}
+
+	public JMenuItem getExitItem() {
+		return exitItem;
+	}
+
+	public CadastroPanelView getCadastrarPanelView() {
+		return cadastrarPanelView;
+	}
+	
+	
+
+}

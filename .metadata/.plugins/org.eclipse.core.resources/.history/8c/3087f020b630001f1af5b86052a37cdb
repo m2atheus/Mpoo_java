@@ -1,0 +1,52 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import view.AberturaView;
+import view.CadastrarView;
+import view.LoginView;
+import view.MensagemView;
+
+public class CadastrarController {
+	
+	CadastrarView cadastrarView;
+	LoginView loginView;
+	AberturaView aberturaView;
+	MenuHendler menuHendler; 
+	
+	public CadastrarController(AberturaView aberturaView,LoginView loginView,CadastrarView cadastrarView) {
+		
+		this.aberturaView = aberturaView;
+		this.loginView = loginView;
+		this.cadastrarView = cadastrarView;
+
+		menuHendler = new MenuHendler();
+		control();
+	}
+	private void control() {
+		cadastrarView.getLogooffItem().addActionListener(menuHendler);
+		cadastrarView.getExitItem().addActionListener(menuHendler);
+		
+	}
+	
+
+	private class MenuHendler implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			if(e.getSource() == cadastrarView.getLogooffItem()){
+				cadastrarView.setVisible(false);
+				loginView.setVisible(true);
+			}
+			else if(e.getSource() == cadastrarView.getExitItem()) {
+				int resp = MensagemView.mostrarMensagem(MensagemView.MENSAGEM_SAIR);
+				if(resp == 0)
+					System.exit(0);
+			}
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package controller;
+
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+
+import view.AberturaView;
+import view.LoginView;
+
+public class AberturaController {
+	
+	AberturaView aberturaView;
+	LoginView loginView;
+	
+	
+	
+	
+	
+	private class KeyHandler extends KeyAdapter{
+
+		@Override
+		public void keyPressed(KeyEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		
+	}
+
+}

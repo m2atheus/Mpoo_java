@@ -1,0 +1,19 @@
+package controller;
+
+import view.AberturaView;
+import view.CadastrarView;
+
+public class LoginController {
+
+	AberturaView aberturaView;
+	CadastrarView cadastrarView;
+	
+	
+	public LoginController() {
+		
+	}
+	
+	
+	
+
+}

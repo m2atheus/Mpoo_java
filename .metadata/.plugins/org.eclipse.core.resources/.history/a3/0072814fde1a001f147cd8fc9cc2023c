@@ -1,0 +1,45 @@
+package gui;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class TelaLogin extends JFrame {
+	
+	JButton entraButton,sairButton;
+	JLabel loginLabel,senhaLabel;
+	JTextField loginField,senhaField;
+
+	public TelaLogin() {
+		super("login");
+		
+		setLayout(new FlowLayout());
+//		setResizable(false);
+		
+		setSize(300, 200);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		loginLabel = new JLabel("login:");
+		senhaLabel = new JLabel("senha:");
+		
+		loginField = new JTextField(10);
+		senhaField = new JTextField(10);
+		
+		entraButton = new JButton("Entar");
+		sairButton = new JButton("Sair");
+		add(loginLabel);
+		
+		add(entraButton);
+		add(sairButton);
+		
+		
+		setVisible(true);
+	}
+	
+	
+
+}

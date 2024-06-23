@@ -1,0 +1,29 @@
+package view;
+
+
+
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class AberturaView extends JFrame{
+	
+	JLabel imageLabel;
+
+	public AberturaView(){
+		super();
+		setLayout(new FlowLayout());
+		setSize(200, 200);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		
+		
+		setVisible(true);
+	}
+	
+	
+	
+	
+
+}

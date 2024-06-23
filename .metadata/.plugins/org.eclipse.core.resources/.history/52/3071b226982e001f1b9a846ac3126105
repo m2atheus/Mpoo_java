@@ -1,0 +1,25 @@
+package view;
+
+
+import javax.swing.JFrame;
+
+public class CadatroView extends JFrame{
+	
+	CadastroPanelView cadaPanelView;
+	
+	public CadatroView(){
+		super();
+		
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		cadaPanelView = new CadastroPanelView();
+		
+		
+		
+		
+		setVisible(true);
+	}
+	
+	
+
+}

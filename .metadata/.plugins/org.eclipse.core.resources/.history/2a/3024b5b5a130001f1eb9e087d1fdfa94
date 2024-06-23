@@ -1,0 +1,16 @@
+package view;
+
+import javax.swing.JOptionPane;
+
+public class MensagemView extends JOptionPane{
+	
+	static final String MENSAGEM_SAIR = "Deseja Sair do Sistema ?";
+	
+	
+	public static void mostrarMensagem(String mensagem) {
+	
+		
+		
+	}
+
+}

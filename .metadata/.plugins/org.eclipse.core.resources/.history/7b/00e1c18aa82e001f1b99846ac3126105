@@ -1,0 +1,29 @@
+package view;
+
+
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class TelaView extends JFrame{
+	
+	JLabel nomeLabel,cpfLabel,foneLabel,emailLabel;
+	JTextField nomeField,cpfField,foneField,emailField;
+	JCheckBox propagandaBox;
+	JButton adicionarButton;
+	public TelaView() {
+		super("Gerenciar Dados");
+		setSize(300, 250);
+		
+		
+		
+		
+		setVisible(true);
+	}
+	
+	
+	
+
+}

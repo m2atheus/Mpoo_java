@@ -1,0 +1,55 @@
+package view;
+
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class CadatroView extends JFrame{
+	
+	JMenuBar menuBar;
+	JMenu cadastrarMenu,sairMenu;
+	JMenuItem UsuarioItem,logooffItem,exitItem;
+	
+	CadastroPanelView cadaPanelView;
+	
+	public CadatroView(){
+		super("MPOO treino");
+		
+		setSize(320, 320);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		
+		menuBar = new JMenuBar();
+		cadastrarMenu = new JMenu("Cadastrar");
+		sairMenu = new JMenu("sair");
+		
+		menuBar.add(cadastrarMenu);
+		menuBar.add(sairMenu);
+		
+		UsuarioItem = new JMenuItem("Usuario");
+		logooffItem = new JMenuItem("Logo Off");
+		exitItem = new JMenuItem("Exit");
+		
+		cadastrarMenu.add(UsuarioItem);
+		sairMenu.add(logooffItem);
+		sairMenu.add(exitItem);
+		
+		
+		
+		cadaPanelView = new CadastroPanelView();
+		
+		
+		setJMenuBar(menuBar);
+		add(cadaPanelView);
+		setVisible(true);
+	}
+	
+	
+
+}

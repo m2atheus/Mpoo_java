@@ -1,0 +1,18 @@
+package view;
+
+
+
+import javax.swing.JFrame;
+
+public class AberturaView extends JFrame{
+
+	public AberturaView(){
+		super();
+		setSize(200, 200);
+	}
+	
+	
+	
+	
+
+}

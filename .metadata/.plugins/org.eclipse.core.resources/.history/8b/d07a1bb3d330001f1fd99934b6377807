@@ -1,0 +1,12 @@
+package controller;
+
+import java.awt.event.ActionListener;
+
+public class CadastrarUsuarioController {
+
+	
+	
+	private class BuutonHandler implements ActionListener{
+		
+	}
+}

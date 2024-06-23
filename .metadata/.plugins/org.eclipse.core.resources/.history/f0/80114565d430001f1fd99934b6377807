@@ -1,0 +1,61 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+
+import javax.swing.event.CaretEvent;
+import javax.swing.event.CaretListener;
+
+import view.CadastrarView;
+
+public class CadastrarUsuarioController {
+	
+	CadastrarView cadastrarView;
+	
+	
+	
+	
+	public CadastrarUsuarioController(CadastrarView cadastrarView) {
+		this.cadastrarView = cadastrarView;
+		
+		contorl();
+	}
+
+
+	private class ButtonHandler implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			
+		}
+		
+	}
+
+	
+	private class Fieldhandler implements CaretListener,FocusListener{
+
+		@Override
+		public void caretUpdate(CaretEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void focusGained(FocusEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void focusLost(FocusEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		
+	}
+	
+	
+}
