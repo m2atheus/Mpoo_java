@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.awt.event.WindowEvent"/>
-    <fullyQualifiedTypeName name="controller.AberturaController.MouseHandler"/>
-    <fullyQualifiedTypeName name="java.awt.Window"/>
-    <fullyQualifiedTypeName name="controller.TelaController"/>
-    <fullyQualifiedTypeName name="controller.TelaController.ButtonHandler"/>
     <fullyQualifiedTypeName name="view.MenuView"/>
     <fullyQualifiedTypeName name="view.TelaView"/>
     <fullyQualifiedTypeName name="javax.swing.JCheckBox"/>
@@ -44,7 +39,6 @@
     <fullyQualifiedTypeName name="controller.LoginController.WindowsHandler"/>
     <fullyQualifiedTypeName name="controller.LoginController.WindowHandler"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="view.LoginView"/>
     <fullyQualifiedTypeName name="controller.AberturaController"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="javax.swing.text.MaskFormatter"/>
     <fullyQualifiedTypeName name="javax.swing.JTextField"/>
     <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+    <fullyQualifiedTypeName name="model.Proprietario"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="model.Telefone"/>
+    <fullyQualifiedTypeName name="model.Pessoa"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="model.Animal"/>
 </qualifiedTypeNameHistroy>
